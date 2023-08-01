@@ -7,8 +7,6 @@ import maya.OpenMayaUI as omui
 
 from maya.app.general.mayaMixin import MayaQWidgetDockableMixin
 
-# ICON_URL = "C:/Users/abeck/Desktop/ab_channelBox/Icons"
-
 
 def get_maya_window():
 
@@ -131,10 +129,10 @@ class AB_ChannelBox(Window):
 
         self._interface["checkbox"]["sel_lock"] = QtWidgets.QCheckBox()
         self._interface["checkbox"]["sel_lock"].setStyleSheet("QCheckBox::indicator {height:15; width:15;}"
-                                                              "QCheckBox::indicator:unchecked {image: url(" + ICON_URL + "/lock_opened_v2.png)}"
-                                                              "QCheckBox::indicator:unchecked:hover {image: url(" + ICON_URL + "/lock_opened_hover_v2.png)}"
-                                                              "QCheckBox::indicator:checked {image: url(" + ICON_URL + "/lock_closed_v2.png)}"
-                                                              "QCheckBox::indicator:checked:hover {image: url(" + ICON_URL + "/lock_closed_hover_v2.png)}")
+                                                              "QCheckBox::indicator:unchecked {image: url("Icons/lock_opened_v2.png)}"
+                                                              "QCheckBox::indicator:unchecked:hover {image: url("Icons/lock_opened_hover_v2.png)}"
+                                                              "QCheckBox::indicator:checked {image: url("Icons/lock_closed_v2.png)}"
+                                                              "QCheckBox::indicator:checked:hover {image: url("Icons/lock_closed_hover_v2.png)}")
         self._interface["layout"]["header"].addWidget(self._interface["checkbox"]["sel_lock"], 0, 0)
 
         self._interface["button"]["sel"] = QtWidgets.QPushButton("*no selection*")
@@ -191,10 +189,10 @@ class AB_ChannelBox(Window):
 
                 self._interface["checkbox"]["{}_lock".format(attr)] = QtWidgets.QCheckBox()
                 self._interface["checkbox"]["{}_lock".format(attr)].setStyleSheet("QCheckBox::indicator {height:15; width:15;}"
-                                                                                  "QCheckBox::indicator:unchecked {image: url(" + ICON_URL + "/lock_opened_v2.png)}"
-                                                                                  "QCheckBox::indicator:unchecked:hover {image: url(" + ICON_URL + "/lock_opened_hover_v2.png)}"
-                                                                                  "QCheckBox::indicator:checked {image: url(" + ICON_URL + "/lock_closed_v2.png)}"
-                                                                                  "QCheckBox::indicator:checked:hover {image: url(" + ICON_URL + "/lock_closed_hover_v2.png)}")
+                                                                                  "QCheckBox::indicator:unchecked {image: url("Icons/lock_opened_v2.png)}"
+                                                                                  "QCheckBox::indicator:unchecked:hover {image: url("Icons/lock_opened_hover_v2.png)}"
+                                                                                  "QCheckBox::indicator:checked {image: url("Icons/lock_closed_v2.png)}"
+                                                                                  "QCheckBox::indicator:checked:hover {image: url("Icons/lock_closed_hover_v2.png)}")
                 self._interface["layout"]["{}_attrs".format(transform)].addWidget(self._interface["checkbox"]["{}_lock".format(attr)], idx, 0)
 
                 self._interface["label"][attr] = QtWidgets.QLabel("{} {}".format(attr[:-1].capitalize(), attr[-1]))
