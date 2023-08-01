@@ -5,7 +5,6 @@ from maya import cmds
 import maya.OpenMaya as apiOM
 import maya.OpenMayaUI as omui
 
-
 from maya.app.general.mayaMixin import MayaQWidgetDockableMixin
 
 # ICON_URL = "C:/Users/abeck/Desktop/ab_channelBox/Icons"
