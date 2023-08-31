@@ -553,7 +553,7 @@ class AB_ChannelBox(Window):
     def _attr_locked(self, transform):
 
         """
-        Returns whether at least on axis of transform is locked
+        Returns whether at least one transform axis is locked
 
         :param transform: string
         :return: bool
@@ -689,7 +689,7 @@ def _select_obj(obj):
 def clean_up():
 
     """
-    Cleans up left over script jobs and callback
+    Cleans up left over script jobs and callbacks
     """
 
     existing_sj = [_ for _ in cmds.scriptJob(listJobs=True) if "AB_ChannelBox" in _]
